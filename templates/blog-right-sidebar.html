@@ -11,7 +11,7 @@
   
   <meta name="author" content="Themefisher.com">
 
-  <title>Airspace | Creative Agency Bootstrap template</title>
+  <title>TheOnlyWay | Articles</title>
 
   <!-- Mobile Specific Meta-->
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -62,35 +62,11 @@
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav navbar-right">
 								<li><a href="index.html">Home</a></li>
-								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Portfolio <span class="ion-ios-arrow-down"></span></a>
-									<ul class="dropdown-menu">
-										<li><a href="portfolio.html">Portfolio Filter</a></li>
-										<li><a href="portfolio-single.html">Portfolio Single</a></li>
-									</ul>
-								</li>
-								<li><a href="service.html">Service</a></li>
-								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog <span class="ion-ios-arrow-down"></span></a>
-									<ul class="dropdown-menu">
-										<li><a href="blog-grid.html">Blog Grid</a></li>
-										<li><a href="blog-single.html">Blog Single</a></li>
-										<li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-										<li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-										<li><a href="blog-full-width.html">Blog Full Width</a></li>
-									</ul>
-								</li>
-								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <span class="ion-ios-arrow-down"></span></a>
-									<ul class="dropdown-menu">
-										<li><a href="about.html">About Us</a></li>
-										<li><a href="coming-soon.html">Coming Soon</a></li>
-										<li><a href="404.html">404 Page</a></li>
-										<li><a href="faq.html">FAQ</a></li>
-										<li><a href="pricing.html">Pricing Table</a></li>
-									</ul>
-								</li>
-								<li><a href="contact.html">Contact</a></li>
+								<li><a href="service.html">SignUp</a></li>
+								<li><a href="service.html">Services</a></li>
+								
+								
+								<li><a href="contact.html">Contact Us</a></li>
 							</ul>
 							</div><!-- /.navbar-collapse -->
 							</div><!-- /.container-fluid -->
@@ -105,8 +81,8 @@
     <div class="row">
       <div class="col-md-12">
         <div class="block">
-          <h1>Blog</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, quibusdam.</p>
+          <h1>Articles</h1>
+          
         </div>
       </div>
     </div>
@@ -121,7 +97,7 @@
         		<div class="post">
 	<div class="post-media post-thumb">
 		<a href="blog-single.html">
-			<img src="{% static  'images/blog/blog-post-1.jpg' %}" alt="">
+			<img src="{% static  'images/wrapper-img2.png' %}" alt="">
 		</a>
 	</div>
 	<h2 class="post-title">{{blog1.title}}</h2>
@@ -153,59 +129,19 @@
 			<a class="pull-left" href="/blogs/{{post.article_ID}}">
 			</a>
 			<div class="media-body">
-				<h3 class="media-heading"><a href="/blogs/{{post.article_ID}}">{{post.title}}</a></h3>
+				<h3 class="media-heading"><a href="/blogs/{{post.article_slug}}">{{post.title}}</a></h3>
 				<p>{{post.article_meta}}</p>
 			</div>
 		</div>
 		{% endfor %}
 		
-		<div class="media">
-			<a class="pull-left" href="blog-single.html">
-				<img class="media-object" src="{% static  'images/blog/post-thumb-3.jpg' %}" alt="Image">
-			</a>
-			<div class="media-body">
-				<h4 class="media-heading"><a href="blog-single.html">Warm welcome from swift</a></h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, officia.</p>
-			</div>
-		</div>
+		
 		
 	</div>
 
 	<!-- End Latest Posts -->
 
-	<!-- Widget Category -->
-	<div class="widget widget-category">
-		<h4 class="widget-title">Categories</h4>
-		<ul class="widget-category-list">
-	        <li><a href="#">Animals</a>
-	        </li>
-	        <li><a href="#">Landscape</a>
-	        </li>
-	        <li><a href="#">Portrait</a>
-	        </li>
-	        <li><a href="#">Wild Life</a>
-	        </li>
-	        <li><a href="#">Video</a>
-	        </li>
-	    </ul>
-	</div> <!-- End category  -->
-
-	<!-- Widget tag -->
-	<div class="widget widget-tag">
-		<h4 class="widget-title">Tag Cloud</h4>
-		<ul class="widget-tag-list">
-	        <li><a href="#">Animals</a>
-	        </li>
-	        <li><a href="#">Landscape</a>
-	        </li>
-	        <li><a href="#">Portrait</a>
-	        </li>
-	        <li><a href="#">Wild Life</a>
-	        </li>
-	        <li><a href="#">Video</a>
-	        </li>
-	    </ul>
-	</div> <!-- End tag  -->
+	
 
 	
 

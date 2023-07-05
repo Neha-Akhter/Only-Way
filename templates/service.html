@@ -30,6 +30,10 @@
   
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.3.1/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.3.1/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+  
+
 
 </head>
 
@@ -58,37 +62,11 @@
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav navbar-right">
-								<li><a href="index.html">Home</a></li>
-								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Portfolio <span class="ion-ios-arrow-down"></span></a>
-									<ul class="dropdown-menu">
-										<li><a href="portfolio.html">Portfolio Filter</a></li>
-										<li><a href="portfolio-single.html">Portfolio Single</a></li>
-									</ul>
-								</li>
-								<li><a href="service.html">Service</a></li>
-								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog <span class="ion-ios-arrow-down"></span></a>
-									<ul class="dropdown-menu">
-										<li><a href="blog-grid.html">Blog Grid</a></li>
-										<li><a href="blog-single.html">Blog Single</a></li>
-										<li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-										<li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-										<li><a href="blog-full-width.html">Blog Full Width</a></li>
-									</ul>
-								</li>
-								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <span class="ion-ios-arrow-down"></span></a>
-									<ul class="dropdown-menu">
-										<li><a href="about.html">About Us</a></li>
-										<li><a href="coming-soon.html">Coming Soon</a></li>
-										<li><a href="404.html">404 Page</a></li>
-										<li><a href="faq.html">FAQ</a></li>
-										<li><a href="pricing.html">Pricing Table</a></li>
-									</ul>
-								</li>
-								<li><a href="contact.html">Contact</a></li>
-							</ul>
+									<li><a href="home">Home</a></li>
+									<li><a href="#">Signup</a></li>
+									<li><a href="service">Service</a></li>
+									<li><a href="contact">Contact</a></li>
+								</ul>
 							</div><!-- /.navbar-collapse -->
 							</div><!-- /.container-fluid -->
 						</nav>
@@ -101,9 +79,9 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <div class="block">
-          <h1>Service</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, ex!</p>
+        <div class="block animated fadeInDown">
+          <h1 style="font-family:Georgia, 'Times New Roman', Times, serif">Welcome to the Only Way</h1>
+          <p>We're grateful you are here</p>
         </div>
       </div>
     </div>
@@ -111,13 +89,16 @@
 </section>
 
 
-<section class="service-about section">
+<section class="service-about section animated fadeInLeft">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6">
 
-				<h2>Creative UX/UI Design Agency</h2>
-				<p class="mt-30">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate soluta corporis odit, optio cum! Accusantium numquam ab, natus excepturi architecto earum ipsa aliquam, illum, omnis rerum, eveniet officia nihil. Eum quod iure nulla, soluta architecto distinctio. Nesciunt odio ullam expedita, neque fugit maiores sunt perferendis placeat autem animi, nihil quis suscipit quibusdam ut reiciendis doloribus natus nemo id quod illum aut culpa perspiciatis consequuntur tempore? Facilis nam vitae iure quisquam eius harum consequatur sapiente assumenda, officia voluptas quas numquam placeat, alias molestias nisi laudantium nesciunt perspiciatis suscipit hic voluptate corporis id distinctio earum. Dolor reprehenderit fuga dolore officia adipisci neque!</p>
+				<h2>About Us</h2>
+				<p class="mt-30"><b>The Only Way </b>is a site designed to enrich the viewers' knowledge and appreciation of Islam. Its aim is to provide the viewing substantial knowledge about Islam, particularly the non-Muslim who may need clarification of common distortions of the media and misrepresentations of ill-informed followers.
+					<br>The purpose of this site is to increase the awareness of Muslims and non-Muslims alike about the mission of Islam to warn mankind of God's punishment and to give the good news of their salvation in Islam. Islam is a revealed religion and a way of life that addresses all aspects of the human condition. Here, every effort is made to be as comprehensive as possible and to encompass all aspects of Islam.</br>
+					<br><I>Finally, may Allah grant success to this mission and help make this work sincerely for His sake alone. "And my guidance cannot come except from Allaah, in Him I trust and unto Him I repent." [Quran 11:88]
+					</I></br>	</p>
 			</div>
 			<div class="col-md-6">
 				<img class="img-responsive" src="{% static 'images/company/company-group-pic.jpg' %}">
@@ -132,80 +113,85 @@
 			<div class="col-md-4 bg-primary">
 				<div class="block">
 					<i class="ion-erlenmeyer-flask"></i>
-					<h3>Interface Design</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe enim impedit repudiandae omnis est temporibus.</p>
+					<h3>Our Mission</h3>
+					<p>To enrich the viewers' knowledge and appreciation of Islam and increase the awareness of Muslims and non-Muslims alike about the mission of Islam to warn mankind of God's punishment and to give the good news of their salvation in Islam.</p>
 				</div>
 			</div>
 			<div class="col-md-4 bg-primary bg-primary-dark">
 				<div class="block">
 					<i class="ion-leaf"></i>
-					<h3>Product Branding</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe enim impedit repudiandae omnis est temporibus.</p>
+					<h3>Our Vision</h3>
+					<p>Islam is a revealed religion and a way of life that addresses all aspects of the human condition. At the Only Way, every effort is made to be as comprehensive as possible and to encompass all aspects of Islam.</p>
 				</div>
 			</div>
 			<div class="col-md-4 bg-primary bg-primary-darker">
 				<div class="block">
 					<i class="ion-lightbulb"></i>
-					<h3>Game Development</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe enim impedit repudiandae omnis est temporibus.</p>
+					<h3>Our Inspiration</h3>
+					<p>The Prophet (P.B.U.H.) has said, “Seeking knowledge is obligatory on every Muslim.”
+						<br>Gaining Islamic knowledge and teaching it to others is considered one of the best ways to attain success in this life and the next.
+
+					</br>
+					</p>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
+
 
 
 <section class="service-list section bg-gray">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<div class="section-title text-center">
-					<h2>What we do best</h2>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-title text-center">
+						<h2><i>Here is Our Activities</i></h2>
+					</div>
 				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4">
+					<div class="block">
+						<h4>Islamic Blogs</h4>
+						<P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</P>
+					
+				</div>
+			</div>
+
+				<div class="col-md-4">
+					<div class="block">
+						<h4>Quranic Verses</h4>
+						<P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</P>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="block">
+						<h4>Ahadith</h4>
+						<P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</P>
+			
+					</div>
+				</div>
+				<div class="col-md-4" >
+					<div class="block">
+						<h4>Islamoshop</h4>
+						<P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</P>
+			
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="block" >
+						<h4>Test your knowledge</h4>
+						<P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</P>
+				
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-md-4">
-				<div class="block">
-					<h4>User research</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, unde.</p>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="block">
-					<h4>Product marketing</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, unde.</p>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="block">
-					<h4>Visual design</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, unde.</p>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="block">
-					<h4>Front-end engineering</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, unde.</p>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="block">
-					<h4>Usability testing & analytics</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, unde.</p>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="block">
-					<h4>Design sprints & prototyping</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, unde.</p>
-				</div>
-			</div>
-		</div>
-	</div>
+		
 </section>
-
-
+    
 
 
 <section class="call-to-action bg-1 section-sm overly">
@@ -213,8 +199,8 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="block">
-					<h2>We design delightful digital experiences.</h2>
-					<p>Read more about what we do and our philosophy of design. Judge for yourself The work and results <br> we’ve achieved for other clients, and meet our highly experienced Team who just love to design.</p>
+					<h2>We Provide you with the best.</h2>
+					<p>Read more about what we do and our inspiration. Judge for yourself The work and results <br> we’ve achieved for other clients, and meet our highly experienced Team who just love to inspire.</p>
 					<a class="btn btn-main btn-solid-border" href="#" >Tell Us Your Story</a>
 				</div>
 			</div>
@@ -236,10 +222,8 @@
 						<li><a href="#">Terms</a></li>
 					</ul>
 				</div>
-				<p class="copyright">Copyright 2018 &copy; Design & Developed by <a href="http://www.themefisher.com">themefisher.com</a>. All rights reserved.
-					<br>
-					Get More <a href="https://themefisher.com/free-bootstrap-templates/" target="_blank">Free Bootstrap Templates</a>
-				</p>
+				<p class="copyright">Copyright 2018 &copy; Design & Developed by <a href="http://www.themefisher.com">theOnlyWay.com</a>. All rights reserved.
+					</p>
 			</div>
 		</div>
 	</div>

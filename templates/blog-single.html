@@ -132,8 +132,7 @@
 					</div>
 					<img src="{% static 'images/quran.jpeg' %}" alt="Img">
 					<div class="post-content post-excerpt">
-						<p>{{allPosts.bcontent}}</p>
-					
+						<p>{{allPosts.bcontent| safe }}</p>
 					</div>	
 					
 			</div>
