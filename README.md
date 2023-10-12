@@ -35,7 +35,7 @@ First, clone this repository:
 
 ```bash
   git clone https://github.com/Neha-Akhter/Only-Way.git
-  cd my-project
+  cd Only-Way
 ```
 ### 2. Create a virtual environment
 
